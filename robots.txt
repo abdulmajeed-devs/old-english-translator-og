@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://old-english-translator-og.netlify.app/sitemap.xml

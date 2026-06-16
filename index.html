@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Old English Translator | Real Anglo-Saxon Grammar Converter</title>
+  <meta name="description" content="Translate Modern English to real Old English with grammar rules, singular or plural you, word explanations, copy, TXT download, examples, and mobile-friendly dark mode.">
+  <meta name="keywords" content="old english translator, modern english to old english translator, old english to modern english translator, anglo saxon translator, medieval english translator, shakespearean translator, thee thou translator, old english words, old english phrases">
+  <link rel="canonical" href="https://old-english-translator-og.netlify.app/">
+  <meta property="og:title" content="Old English Translator | Real Anglo-Saxon Grammar Converter">
+  <meta property="og:description" content="Translate Modern English to real Old English with grammar notes, singular or plural you, copy, TXT download, and examples.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://old-english-translator-og.netlify.app/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Old English Translator | Real Anglo-Saxon Grammar Converter">
+  <meta name="twitter:description" content="A mobile-friendly Old English translator with grammar rules, examples, copy, TXT download, and explanations.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/app.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Old English Translator",
+    "applicationCategory": "LanguageApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "A browser-based Old English translator for Modern English to Old English, Old English to Modern English, Anglo-Saxon, Medieval, Shakespearean, and archaic English styles."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Old English Translator home">
+        <span class="brand-name">Old English Translator</span>
+        <span class="brand-note">Modern English, Anglo-Saxon, Medieval, and Shakespearean style</span>
+      </a>
+      <div class="nav-wrap">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-controls="mainNav" aria-expanded="false">Menu</button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark or light mode">Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Free browser-based language converter</p>
+          <h1>Old English Translator</h1>
+          <p class="hero-lead">Convert modern English into Old English style, Anglo-Saxon flavor, medieval wording, Shakespearean phrasing, or a readable thee and thou version. You can also switch direction and turn older words back into clearer modern English.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container tool-shell" id="translator" aria-labelledby="translatorTitle">
+      <div class="tool-header">
+        <div>
+          <h2 id="translatorTitle">Translate with real Old English grammar rules</h2>
+          <p>The translator detects sentence patterns before choosing pronouns, be-verbs, objects, and word order.</p>
+        </div>
+        <span class="badge">Rule-based grammar engine</span>
+      </div>
+
+      <div class="translator-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <label id="inputLabel" for="inputText">Modern English</label>
+            <span id="inputCounter">0 words / 0 chars</span>
+          </div>
+          <textarea id="inputText" placeholder="Type or paste text here. Example: Hello friend, thank you for your help."></textarea>
+        </div>
+
+        <div class="swap-column">
+          <button class="swap-btn" id="swapBtn" type="button" aria-label="Swap input and output">⇄</button>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <label id="outputLabel" for="outputText">Old English</label>
+            <span id="outputCounter">0 words / 0 chars</span>
+          </div>
+          <textarea id="outputText" readonly placeholder="Translation will appear here."></textarea>
+        </div>
+      </div>
+
+      <div class="toolbar options-bottom">
+        <div>
+          <label class="control-label" for="modeSelect">Mode</label>
+          <select class="select-field" id="modeSelect" aria-label="Translation mode">
+            <option value="real">Real Old English</option>
+            <option value="shakespeare">Shakespeare / Early Modern style</option>
+          </select>
+        </div>
+        <div>
+          <label class="control-label" for="directionSelect">Direction</label>
+          <select class="select-field" id="directionSelect" aria-label="Translation direction">
+            <option value="modern-to-old">Modern to Old English</option>
+            <option value="old-to-modern">Old English to Modern English</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="options-row" aria-label="Grammar options">
+        <label class="select-block" for="youMode">
+          Translate modern “you” as
+          <select class="select-field" id="youMode">
+            <option value="singular">Singular: þū / þē</option>
+            <option value="plural">Plural: ġē / ēow</option>
+          </select>
+        </label>
+        <select class="select-field" aria-label="Supported examples">
+          <option>Supported: How are you?</option>
+          <option>I am good.</option>
+          <option>You are good.</option>
+          <option>He is strong.</option>
+          <option>We are happy.</option>
+          <option>They are wise.</option>
+          <option>I love you.</option>
+          <option>You love me.</option>
+          <option>Where is the house?</option>
+        </select>
+      </div>
+
+      <div class="action-area">
+        <div class="action-row">
+          <button class="primary-btn" id="translateBtn" type="button">Translate</button>
+          <button class="action-btn" id="copyBtn" type="button">Copy</button>
+          <button class="action-btn" id="downloadBtn" type="button">Download TXT</button>
+          <button class="action-btn" id="pasteBtn" type="button">Paste</button>
+          <button class="action-btn" id="clearBtn" type="button">Clear</button>
+          <button class="action-btn" id="historyToggle" type="button">History</button>
+        </div>
+        <div class="status" id="statusText" aria-live="polite"></div>
+      </div>
+
+      <div class="grammar-box" id="grammarBox" aria-live="polite">
+        <h3>Grammar explanation</h3>
+        <p>Translation notes will appear here.</p>
+      </div>
+
+      <div class="shortcuts">
+        <h3>Common examples</h3>
+        <div class="shortcut-row" id="shortcutRow"></div>
+      </div>
+
+      <div class="translator-links">
+        <h3>Popular translator sections</h3>
+        <div class="mini-links" aria-label="Popular translator intents">
+          <a href="#translator">Modern to Old English</a>
+          <a href="#translator">Old English to Modern English</a>
+          <a href="#anglo-saxon">Anglo-Saxon translator</a>
+          <a href="#shakespearean">Shakespearean translator</a>
+          <a href="#phrases">Old English phrases</a>
+        </div>
+      </div>
+
+      <div class="history-panel" id="historyPanel">
+        <div class="tool-header">
+          <h3>Translation history</h3>
+          <button class="action-btn" id="clearHistoryBtn" type="button">Clear History</button>
+        </div>
+        <div class="history-list" id="historyList"></div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container content-card seo-content">
+        <h2>Complete Guide to the Old English Translator</h2>
+        <p>An Old English translator is useful when you want modern words to sound older, stronger, more poetic, or closer to the language of Anglo-Saxon England. Searchers who type "old english translator" usually want one of several things. Some want true Old English, the early medieval language of Beowulf, Alfred, and Anglo-Saxon manuscripts. Some want Middle English, the language period associated with Chaucer. Some want Shakespearean English, which is actually Early Modern English rather than Old English. Others simply want a fun thee and thou translator that makes a message feel old-fashioned without becoming impossible to read. This tool is built for all of those practical intents, so the first decision is not only what to translate, but what kind of historical English style you need.</p>
+        <p>The translator above is designed as a fast browser tool. You can paste a sentence, choose a mode, switch the direction, copy the result, save a short translation history, and download a plain text file. The rule-based engine gives an instant result for supported sentence patterns, pronouns, be-verbs, objects, adjectives, and common words. That keeps the tool usable for students, writers, role-playing games, fantasy dialogue, classroom examples, social media posts, and quick phrase experiments.</p>
+        <p>Old English is not the same as modern English with a few old words added. Real Old English, also called Anglo-Saxon, used grammar, spelling, sounds, and vocabulary that modern readers often find unfamiliar. A simple phrase such as "good day my friend" may become "god daeg min freond" in a simplified Old English style, and a more scholarly reconstruction would need grammar, case endings, word order, and dialect choices. Because most users want quick readable text rather than a university-level reconstruction, this translator offers several modes. The Anglo-Saxon mode gives older vocabulary and letter flavor. The Medieval mode gives a Middle English tone. The Shakespearean mode gives theatrical Early Modern English. The Thee Thou mode keeps the meaning readable for casual use.</p>
+
+        <h2 id="intent">What people mean when they search Old English translator</h2>
+        <p>The phrase "Old English translator" has mixed intent. One user may be writing a fantasy inscription and wants a phrase like "the brave king returns" to sound ancient. Another user may be reading a historical text and wants to understand unfamiliar words. A student may need to compare Old English, Middle English, and Modern English for a class. A game developer may need short lines for a medieval village, a quest scroll, a character greeting, or a fictional kingdom. A social media user may want a funny old-style version of a modern sentence. The best page for this keyword must serve the tool intent first, then explain the historical differences clearly enough that users do not choose the wrong style.</p>
+        <p>That is why the translator begins with the tool instead of a long essay. Someone searching the keyword wants to translate text right away. After the tool, the supporting content answers the questions that usually follow: Is this true Old English? What is Anglo-Saxon? What is the difference between Old English and Shakespearean English? Can I translate Old English back to modern English? Can I copy the result? Can I download it? Can I use the result for fantasy writing, a game, a tattoo idea, or a school project? The page is organized around those practical needs.</p>
+        <p>The most important user-intent groups are "modern English to Old English translator," "Old English to modern English translator," "Anglo-Saxon translator," "medieval English translator," "Shakespearean translator," "thee thou translator," "Old English words," "Old English phrases," and "Old English alphabet." A strong homepage should address all of these without pretending that they are the same language period. It should also explain accuracy limits. No automatic browser-based translator can replace a trained historical linguist for academic publication, manuscript work, legal text, or formal epigraphy. For everyday use, however, a clear style converter gives users the quick result they came for.</p>
+
+        <h2>Modern English to Old English translator</h2>
+        <p>The most common use case is modern English to Old English. Users type a normal sentence and expect older wording. A browser translator can handle common words such as hello, friend, king, queen, house, bread, water, day, night, love, truth, sword, shield, and wisdom. It can also replace modern pronouns with older forms such as thou, thee, thy, thine, ic, min, and thu depending on the selected style. This makes short phrases feel older immediately. For example, "Hello my friend" can become "Hail min freond" in a simplified Anglo-Saxon style, or "Hail, mine friend" in a Shakespearean style.</p>
+        <p>The challenge is that Old English grammar does more than replace vocabulary. Old English uses grammatical gender, cases, stronger inflection, different pronoun systems, and flexible word order. A true translation of a full paragraph depends on whether a word is subject, object, possession, direct address, command, or part of a phrase. It also depends on dialect and time period. West Saxon Old English, for example, is not identical to every form of Anglo-Saxon English. This tool therefore focuses on a practical conversion that gives the flavor of Old English while remaining readable.</p>
+        <p>For creative writing, that approach is often more useful than a strictly reconstructed sentence. Readers usually need to understand the line. If a fantasy character speaks in fully inflected Old English, most modern readers will need a footnote. If the goal is a game interface, a short story, a poem, or a role-play message, readable old-style phrasing is usually better. The translator gives the user control: Anglo-Saxon for the strongest old flavor, Medieval for a Chaucer-like tone, Shakespearean for theatrical phrasing, or Thee Thou for readable archaic English.</p>
+        <p>When you use the modern to Old English mode, start with plain sentences. Short direct sentences translate better than long modern paragraphs full of idioms. "The king rides to the village" is easier to convert than "The team is going to roll out a new strategy next quarter." Historical styles work best with concrete nouns, direct verbs, and clear subjects. If a sentence sounds too modern after translation, simplify the source text, choose a different style, or replace very modern words with simpler alternatives before translating.</p>
+
+        <h2>Old English to Modern English translator</h2>
+        <p>The reverse direction is useful when you see old-looking words and want plain modern English. The tool can convert common older pronouns, verb endings, and dictionary words back into modern forms. It can turn thou into you, thy into your, hath into has, dost into do, doth into does, goeth into goes, and freond into friend. It can also normalize thorn and eth characters into modern th spelling. This is helpful for users who find text in a story, a game, a quote, or a stylized image and want to understand the basic meaning.</p>
+        <p>For real Old English passages, the reverse mode should be treated as a helper rather than a final authority. Manuscript Old English may include spelling variation, abbreviations, inflected endings, poetic compounds, and word order that cannot be solved by simple word replacement. A line from Beowulf, a charter, a homily, or an Old English poem may require grammar analysis and context. Still, a basic old-to-modern converter can help identify familiar roots and give a starting point for interpretation.</p>
+        <p>Many users also paste Shakespearean or pseudo-medieval text into an Old English translator. Phrases such as "Wherefore art thou" are not Old English. They are Early Modern English. The old-to-modern mode can still help by converting words such as art, thou, thy, thee, hath, and doth. That makes it useful for classroom reading, theater lines, and casual interpretation. It also helps users understand why one historical style differs from another.</p>
+        <p>If you want the clearest modern result, remove decorative punctuation and keep the line short. Translate one sentence at a time. If the result is unclear, try replacing unusual characters with plain letters, then translate again. The tool is strongest for common words and familiar archaic forms. For specialized historical work, compare the result with a dictionary, a glossary, or a scholarly edition.</p>
+
+        <h2 id="anglo-saxon">Anglo-Saxon translator and true Old English</h2>
+        <p>Anglo-Saxon is the name often used for the people, culture, and language of early medieval England before and after the Norman Conquest. The language is commonly called Old English. It belongs to the Germanic language family and is much closer to early forms of English, Frisian, Dutch, German, and Norse-related vocabulary than to the French-influenced English of later centuries. Words such as cyning for king, hus for house, boc for book, waeter for water, and freond for friend show how some roots are still visible in modern English.</p>
+        <p>A true Anglo-Saxon translator has to handle more than vocabulary. Old English nouns can change form according to case. Verbs change according to person, number, tense, and mood. Adjectives may decline. Pronouns have forms that modern English no longer uses in daily speech. The language also used letters that are not standard in modern English, including thorn, eth, ash, and wynn. Because of those differences, a perfect automatic translator is difficult, especially without knowing the exact grammar of the intended sentence.</p>
+        <p>The Anglo-Saxon mode in this tool aims for useful Old English flavor. It replaces common modern words with recognizable Old English equivalents, optionally uses thorn and eth characters, and keeps the sentence readable. This is especially useful for fantasy mottos, fictional inscriptions, character names, role-playing messages, educational examples, and first-pass exploration of Old English vocabulary. It is not a substitute for a specialist translation of a legal motto, permanent tattoo, academic assignment, or public inscription where exact grammar matters.</p>
+        <p>When users search "Anglo-Saxon translator," they may want "Old English translator" in the strict historical sense. That means the page should not only offer a style button, but also explain the difference. Anglo-Saxon English is earlier than Middle English and much earlier than Shakespeare. If a user wants text that looks like Beowulf, the Anglo-Saxon mode is the closest choice. If a user wants something readable with old pronouns, the Thee Thou or Shakespearean mode is usually better.</p>
+
+        <h2>Medieval English translator</h2>
+        <p>Medieval English usually points to Middle English, the stage of English after Old English and before Early Modern English. It is the language period associated with Geoffrey Chaucer and the Canterbury Tales. Middle English is still difficult for many modern readers, but it is more recognizable than Old English because it contains more familiar vocabulary, more French influence, and spelling patterns closer to modern English. When someone asks for a medieval English translator, they often want text that sounds like a castle, a manuscript, a knight, a village, or a fantasy quest.</p>
+        <p>The Medieval mode uses a lighter touch than the Anglo-Saxon mode. It changes some vocabulary, adjusts pronouns, and gives a historical tone without making every sentence unreadable. This is useful for game dialogue, medieval-themed invitations, festival signs, fantasy tavern menus, school projects, and creative captions. A sentence such as "The traveler seeks a warm house and good bread" can be pushed toward a medieval tone without turning into a fully reconstructed grammar exercise.</p>
+        <p>It is important to know that "medieval" covers many centuries and regions. English changed greatly from the early Middle English period to the late Middle English period. A phrase that sounds like Chaucer is not the same as a phrase from earlier Anglo-Saxon England. The Norman Conquest brought major changes to vocabulary and social language. French and Latin influence entered English in law, religion, government, literature, and courtly life. A medieval converter is therefore best understood as a style tool unless it uses a carefully selected period and dialect.</p>
+        <p>For most users, the right medieval translation is one that reads well and signals the intended setting. If the result is for fiction, choose clarity first. If the result is for education, note that it is a style translation and compare it with real Middle English examples. If the result is for a public-facing brand, game, or product, review the wording carefully so it does not become confusing, unintentionally comic, or historically misleading.</p>
+
+        <h2 id="shakespearean">Shakespearean English translator</h2>
+        <p>Shakespearean English is not Old English. It is Early Modern English, the period of English used around the sixteenth and seventeenth centuries. It is far closer to modern English than Anglo-Saxon or Middle English. Many users still search for "old English translator" when they mean "Shakespeare translator" because the word old is used casually. A good translator page should capture that intent while making the distinction clear. If the user wants thee, thou, hath, doth, art, and dramatic phrasing, Shakespearean mode is the best choice.</p>
+        <p>Shakespearean style is popular because it remains readable and instantly recognizable. It works well for theater, poems, wedding vows, jokes, fantasy dialogue, classroom examples, character voices, and social media posts. A line like "You are my friend" can become "Thou art mine friend." A line like "Do you know the truth?" can become "Dost thou know the truth?" These changes are easy to understand, yet they create a strong old-fashioned sound.</p>
+        <p>Early Modern English also has vocabulary and grammar patterns that go beyond thee and thou. The pronoun system distinguishes subject and object forms. Thou is subject, thee is object, thy is possessive before consonant sounds, and thine often appears before vowel sounds or as a standalone possessive. Verb endings change too: thou hast, thou dost, thou art, he hath, he doth. A style converter can approximate these patterns, but polished writing may still need manual editing.</p>
+        <p>Use Shakespearean mode when readability matters. It is the safest style for users who want an "old English" feel but do not actually want real Old English. It is also the style most readers will understand without a glossary. For fantasy settings, it can make noble characters, prophets, bards, and formal letters sound elevated. For comedy, it can make modern sentences sound playfully dramatic.</p>
+
+        <h2>Thee thou translator</h2>
+        <p>A thee thou translator is a practical sub-intent of the Old English translator keyword. Many searchers do not need full Anglo-Saxon vocabulary. They only want modern pronouns changed into older forms. The basic pattern is simple: you becomes thou when it is the subject, you becomes thee when it is the object, your becomes thy, yours becomes thine, are becomes art with thou, have becomes hast, and do becomes dost. For example, "You are kind" becomes "Thou art kind," while "I thank you" becomes "I thank thee."</p>
+        <p>Automatic tools cannot always know whether modern "you" is subject or object without deeper grammar parsing. A sentence such as "I saw you" should use thee, but "You saw me" should use thou. The Thee Thou mode gives a readable old-style result, but users can improve it by checking the pronoun role. This matters if the text is for a script, poem, public post, or formal creative project.</p>
+        <p>Thee and thou are often associated with Shakespeare, the King James Bible, older prayer language, and fantasy dialogue. They are not the main feature of true Old English. In Old English, the pronoun system is different again, with forms such as thu, the, thin, and others depending on case. Still, thee and thou are the most familiar old-style pronouns for modern audiences, so a translator that includes them serves a major part of user intent.</p>
+        <p>Use Thee Thou mode for short, readable transformations. It works well for greetings, captions, invitations, vows, playful insults, jokes, and role-play dialogue. If a sentence becomes awkward, simplify the sentence first. "Can you help me with this task?" may become clearer if rewritten as "Please help me" before translating.</p>
+
+        <h2 id="alphabet">Old English alphabet and special letters</h2>
+        <p>Old English used letters that modern English readers do not use every day. Thorn, written as &thorn; or &THORN;, represents a th sound. Eth, written as &eth; or &ETH;, also represents a th sound. Ash, written as &aelig; or &AElig;, represents a vowel sound found in Old English spelling. Wynn represented a w sound before the modern letter w became standard. These letters make text look more authentic, but they can also make text harder to read, copy, search, or use in modern systems.</p>
+        <p>The translator includes an option for thorn and eth because many users want the visual character of Old English. Turning the option on can make the output feel more Anglo-Saxon. Turning it off keeps the result easier to type and paste into websites, documents, chat apps, game engines, and social platforms. If you are making content for broad readers, plain th spelling is usually safer. If you are making a decorative phrase, title, fictional inscription, or educational example, the special letters can be useful.</p>
+        <p>It is also important to remember that Old English spelling was not fully standardized in the modern sense. Manuscripts vary. Scribes used different conventions, and regional dialects mattered. A modern tool can provide a consistent style, but it does not recreate every scribal feature. For serious historical work, consult an Old English grammar, dictionary, or edition of the text you are studying.</p>
+        <p>For casual translation, special letters are mainly an aesthetic and educational feature. They help users recognize that Old English was not simply modern English with antique words. They also make the output distinctive. If your audience may not understand these letters, add a plain modern version beside the Old English style version.</p>
+
+        <h2 id="phrases">Common Old English words and phrase examples</h2>
+        <p>Short phrase examples help users understand what a translator can do. They also help writers choose the right style before translating a longer paragraph. Below are simplified examples for common modern phrases. They are meant for practical style guidance, not scholarly citation.</p>
+        <table class="example-table">
+          <thead>
+            <tr>
+              <th>Modern English</th>
+              <th>Old English style</th>
+              <th>Useful context</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hello, my friend.</td>
+              <td>Hail, min freond.</td>
+              <td>Greeting, game dialogue, role-play.</td>
+            </tr>
+            <tr>
+              <td>Thank you for your help.</td>
+              <td>Thanc for thin fultum.</td>
+              <td>Polite message, caption, classroom example.</td>
+            </tr>
+            <tr>
+              <td>The king returns.</td>
+              <td>Se cyning hweorfth.</td>
+              <td>Fantasy line, quest title, story heading.</td>
+            </tr>
+            <tr>
+              <td>Good day and peace.</td>
+              <td>God daeg and frith.</td>
+              <td>Greeting card, medieval sign, simple phrase.</td>
+            </tr>
+            <tr>
+              <td>I seek wisdom.</td>
+              <td>Ic sece wisdom.</td>
+              <td>Motto, learning theme, school project.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Common Old English-style words include freond for friend, cyning for king, cwen for queen, hus for house, ham for home, boc for book, daeg for day, niht for night, lufu for love, soth for truth, sweord for sword, scield for shield, fyr for fire, waeter for water, eorthe for earth, and weg for road. Some are close to modern English. Others look unfamiliar. This mixture is one reason Old English feels both ancestral and foreign to modern speakers.</p>
+        <p>When using phrase examples, pay attention to the target audience. A phrase for a fantasy game can be more stylized than a phrase for a classroom explanation. A tattoo idea should be checked carefully by a specialist. A social caption can be playful and less exact. A motto may need a balance of beauty, brevity, and clarity. Translation intent matters as much as dictionary meaning.</p>
+
+        <h2>How to use the translator well</h2>
+        <p>Start by choosing the style that matches your goal. If you want something closest to true Old English, choose Anglo-Saxon. If you want medieval atmosphere, choose Medieval. If you want dramatic but readable lines, choose Shakespearean. If you want a simple old-fashioned conversion, choose Thee Thou. Then paste a short sentence into the input box and click Translate. If the result is too heavy, choose a lighter style. If it is too plain, choose a stronger style or raise the formality option.</p>
+        <p>The shortcut buttons are designed for quick testing. They let you see how the tool handles greetings, gratitude, village phrases, kingly lines, learning phrases, and common messages. After you click a shortcut, the translator fills the input and generates output. You can then edit the source text, change style, or copy the result. This is useful on mobile because you can test the tool without typing a long sentence on a small screen.</p>
+        <p>Use the copy button when you want to paste the result into a document, game editor, chat, post, or note. Use the download TXT button when you want to save the translation as a simple file. The history panel stores recent translations in your browser, not on a server. That means the history is private to your device, but it also means it will not follow you to another browser or device. Use clear history if you want to remove saved items.</p>
+        <p>The best results come from clear source text. Avoid slang, brand names, technical language, and long modern idioms unless you want a playful result. Replace "I am going to optimize the workflow" with "I will make the work better" before translating. Replace "The launch went viral" with "Many people heard the news." Historical style tools work best when the meaning is direct and concrete.</p>
+
+        <h2>Old English for students</h2>
+        <p>Students often search for an Old English translator while studying the history of English. The tool can help them see how vocabulary changes across time, but it should not be used as the only source for homework. Old English is a real historical language with grammar rules that deserve careful study. A style converter can introduce the sound and feel of older English, show common words, and demonstrate why modern English changed so much after the Anglo-Saxon period.</p>
+        <p>For learning, compare the four modes. Type the same sentence and translate it as Anglo-Saxon, Medieval, Shakespearean, and Thee Thou. Notice which result is hardest to read. Notice which words remain similar to modern English. Notice how pronouns change. This comparison makes the timeline clearer: Old English is earliest and most different, Middle English is later and partly recognizable, Early Modern English is closer to modern English, and simple archaic style is mostly modern English with older pronouns and endings.</p>
+        <p>Students should also learn that historical labels are often used loosely online. Many websites call Shakespeare "Old English" because the phrase is familiar to users, but in academic terms Shakespeare is not Old English. Old English ended centuries before Shakespeare was born. A good educational answer makes that distinction without blocking the user's practical goal. This page does both: it gives the tool and explains the difference.</p>
+        <p>When using the output in a school project, describe it honestly. Say that the translator provides a simplified Old English style or historical English style, not a guaranteed scholarly translation. If the assignment requires real Old English grammar, use a textbook, dictionary, or teacher-approved resource. The translator is best for examples, comparison, brainstorming, and understanding user-facing language styles.</p>
+
+        <h2>Old English for writers and authors</h2>
+        <p>Writers use Old English translators to create atmosphere. A fantasy novel may need a king's proclamation, a village greeting, an ancient oath, a spell, a sword name, or a line carved above a gate. The goal is usually not strict historical reconstruction. The goal is voice. A good line should sound old, carry the right mood, and remain understandable enough for the reader. The translator can help generate a first draft that the writer then edits for rhythm and meaning.</p>
+        <p>For dialogue, use historical style sparingly. If every character speaks in dense archaic language, readers may slow down. Reserve stronger Old English or medieval phrasing for ceremonial moments, religious speech, royal commands, ancient texts, songs, riddles, or characters from a different age. Use lighter Thee Thou or Shakespearean phrasing when a character needs to sound formal but still readable. The style selector makes this easy to test.</p>
+        <p>For names and titles, Old English vocabulary can be especially useful. Words for king, shield, sword, wolf, raven, hall, road, land, sea, wisdom, fire, and truth can inspire place names, clan names, book titles, and object names. Always check the meaning before publishing, because a generated phrase may not have the grammar or nuance you expect. A short motto can be memorable even when it is simplified, but a final published inscription deserves review.</p>
+        <p>Writers should also think about consistency. Do not mix Anglo-Saxon, Middle English, and Shakespearean forms randomly unless the worldbuilding supports it. If one kingdom uses Anglo-Saxon-style vocabulary, keep that pattern. If one noble house uses Shakespearean ceremony, keep it distinct. A translator can create options, but the author chooses the final language system.</p>
+
+        <h2>Old English for games and role-playing</h2>
+        <p>Game developers and role-playing communities often need short atmospheric text quickly. A village elder might greet the player. A quest scroll might mention a lost sword. A fantasy item may need a name. A medieval map may need old-looking labels. An Old English translator can speed up that process by creating phrases that feel historical and immersive. The copy and TXT download buttons are useful when moving lines into a game editor, localization file, design document, or script.</p>
+        <p>For games, clarity is important. Players must understand objectives. A quest line such as "Find the lost shield in the dark forest" should remain readable enough that the player knows what to do. You can use stronger Old English style for flavor text and lighter style for instructions. For example, the quest title can be archaic, while the objective text can be modern. This balance keeps atmosphere without hurting usability.</p>
+        <p>Role-playing groups may use old-style language for character letters, tavern signs, prop documents, campaign handouts, and in-world poems. The shortcut buttons help create quick greetings and common lines. The history feature helps keep several generated options until the group chooses one. The dark mode is useful for late-night writing sessions or game tables with dim screens.</p>
+        <p>When using generated text in a commercial game, edit for consistency and tone. Decide whether the setting is Anglo-Saxon, medieval, Renaissance, or invented fantasy. Use the translator as a drafting tool, then build a small style guide for recurring words. That makes the world feel intentional rather than randomly old-fashioned.</p>
+
+        <h2>Old English for social media, captions, and fun</h2>
+        <p>Many users simply want to make a modern sentence sound ancient for a post, caption, joke, meme, profile bio, or message to a friend. For this intent, Thee Thou and Shakespearean modes are usually best. They create a recognizable old-time voice without making the text too hard to read. A caption such as "I need coffee before work" can become funnier when converted into a dramatic old-style line. A birthday greeting can sound like a royal proclamation. A casual complaint can become theatrical.</p>
+        <p>For social media, shorter is better. Translate a sentence, then trim it. If the result uses a word your audience will not understand, replace it. The point is style, not difficulty. The copy button makes it easy to move the result into a post, and the mobile layout keeps the controls usable on a phone. If a platform does not support special Old English letters, turn off the thorn and eth option or use Shakespearean mode.</p>
+        <p>Humor works best when the modern meaning remains obvious. "Thou art late again" is funny because readers understand it instantly. A fully Anglo-Saxon version might look impressive but lose the joke. Choose the style that fits the audience. The translator is intentionally flexible because user intent ranges from education to entertainment.</p>
+        <p>For profile bios, usernames, and display names, avoid overly long translations. Pick a strong word or phrase. Words related to wisdom, fire, truth, road, sea, shield, sword, friend, king, queen, hall, and song can create memorable names. Check spelling before using a phrase permanently.</p>
+
+        <h2>Accuracy and limitations</h2>
+        <p>No simple online Old English translator can guarantee perfect historical accuracy for every sentence. The reason is structural. Modern English relies heavily on word order and helper verbs. Old English uses more inflection and different grammar. One modern word may have several Old English possibilities. One Old English word may mean different things depending on context. Idioms rarely translate word for word. Poetry may use compounds, kennings, meter, and word order that a basic converter cannot fully analyze.</p>
+        <p>This tool is transparent about that limitation. It gives practical output for common phrases and style transformation. It is not a replacement for a specialist translation. Use it for brainstorming, creative drafts, learning support, and casual conversion. For academic, legal, religious, permanent, or commercial high-stakes use, ask a qualified expert to review the final wording. This is especially important for tattoos, inscriptions, logos, book covers, and public product names.</p>
+        <p>Accuracy also depends on the selected mode. Real Old English output uses limited grammar templates and is still simplified. Shakespearean output may feel accurate to a general audience even when it is not Old English. Each mode solves a different user need.</p>
+        <p>If you need a better result, simplify the source sentence, translate in small parts, compare modes, and manually edit. Keep names unchanged unless you specifically want to adapt them. Check important nouns in a dictionary. Avoid translating modern technical terms directly.</p>
+
+        <h2>Why Old English looks so different</h2>
+        <p>Modern English grew from Old English, but the journey includes major historical changes. The Anglo-Saxon settlement, Christian Latin influence, Viking contact, the Norman Conquest, French vocabulary, printing, spelling changes, sound changes, education, empire, science, and global communication all shaped English. As a result, modern English contains Germanic roots, French loans, Latin terms, Greek technical vocabulary, and words from many other languages. Old English represents an earlier stage before many of those layers became common.</p>
+        <p>Old English also had sounds and spellings that later changed. Some letters disappeared. Some endings weakened. Some word order patterns shifted. Many words survived in altered form, while others vanished or became poetic. For example, modern friend is related to Old English freond. Modern book is related to boc. Modern day is related to daeg. Seeing these roots can make Old English feel familiar. At the same time, full sentences can look foreign because the grammar is different.</p>
+        <p>This difference is why users need style choices. A strict Old English result may not satisfy someone who wants a readable caption. A Shakespearean result may not satisfy someone studying Beowulf. A medieval result may not satisfy someone looking for Anglo-Saxon vocabulary. The translator interface avoids a one-size-fits-all approach by letting the user choose the intended historical flavor.</p>
+        <p>Understanding the timeline helps: Old English roughly covers early medieval Anglo-Saxon England; Middle English comes after the Norman Conquest; Early Modern English includes Shakespeare; modern English is the language used today. Online searches blur these labels, but the best translation experience keeps them available as separate modes.</p>
+
+        <h2>Old English pronunciation and reading support</h2>
+        <p>Many people who search for an Old English translator also want to know how the result might sound. Pronunciation is a deep topic, but a few basic ideas help. Old English spelling was more phonetic than modern English in many cases, so letters often map more directly to sounds. The letter c could sound like k in some contexts and like ch in others. The letter g could sound hard or softer depending on position. Vowels could be short or long. The special letters thorn and eth usually represent th sounds. Ash represents a vowel sound that modern English no longer writes as a separate letter.</p>
+        <p>For a casual user, the most useful pronunciation rule is to avoid reading Old English exactly like modern English. Words may look familiar but sound different. Freond is related to friend, but it should not be treated as simply the modern word with unusual spelling. Cyning is related to king, but the spelling points to an older sound system. If you are using the translator for a classroom or performance, compare the result with a pronunciation guide before reading it aloud in public.</p>
+        <p>For creative writing, pronunciation can guide style choices. If a word looks striking but is hard to pronounce, it may work well as an inscription but poorly as dialogue. If a phrase is meant to be spoken by an actor, choose the readable style or edit the Anglo-Saxon output. A game character can use one or two older words inside a mostly readable line. A poem can lean harder into sound and rhythm. The translator gives a first draft, and the writer shapes it for the ear.</p>
+        <p>Pronunciation also explains why the same search keyword covers different needs. A user who wants "Old English pronunciation" may need help reading an actual historical text. A user who wants "old English accent" may want a theatrical or fantasy voice. A user who wants "old English letters" may want visual authenticity. These are related, but not identical. This page keeps them together because they often begin with the same search: old english translator.</p>
+
+        <h2>Dictionary lookup vs sentence translation</h2>
+        <p>An Old English dictionary and an Old English translator solve different problems. A dictionary gives word meanings. It can show that hus means house, cyning means king, and freond means friend. It may also show grammatical information, variant forms, related words, and citations. A translator tries to convert a full phrase or sentence. That requires word choice, grammar, order, and style. For a single word, a dictionary may be more precise. For a quick phrase, a translator is faster.</p>
+        <p>Most visitors want both without thinking about the difference. They paste a phrase, but they also expect individual words to change. That is why the offline translator uses a dictionary-style base and then applies style rules. The dictionary layer handles common words. The style layer handles pronouns, verb endings, special letters, and historical flavor. This layered approach is practical for browser use, even though it cannot solve every historical grammar problem.</p>
+        <p>If you are researching a word, use the translator result as a lead rather than a final answer. Search the word in a dedicated Old English dictionary and check whether it matches your intended meaning. Some words have multiple senses. Some modern words map to several Old English words depending on context. For example, love may be affection, charity, desire, or loyalty depending on the sentence. A short motto may need a different word than a romantic line.</p>
+        <p>If you are translating a sentence, begin with meaning rather than word-for-word conversion. Ask what the sentence is doing. Is it a command, greeting, oath, question, warning, or description? A dictionary cannot answer that by itself. A translator can help shape the sentence, but you should still review the output. The best workflow is to translate, inspect key words, simplify, and translate again if needed.</p>
+
+        <h2>Examples by search intent</h2>
+        <p>Different users need different outputs. Someone searching "modern English to Old English translator" may type "The brave warrior protects the village." The best result should sound ancient and strong. Someone searching "thee thou translator" may type "You are my best friend" and expect a readable old-fashioned sentence. Someone searching "Shakespeare translator" may want "Thou art mine good friend" rather than a difficult Anglo-Saxon line. Someone searching "Old English to modern English" may paste "hath," "doth," or "freond" and expect plain modern wording.</p>
+        <p>For a fantasy inscription, shorter is stronger. "Fire and truth" may be better than "The eternal fire of truth shall never disappear from our kingdom." For a classroom comparison, use the same sentence in every style. For example, translate "The king gives bread to his friend" in Anglo-Saxon, Medieval, Shakespearean, and Thee Thou modes. The comparison shows how the historical flavor changes while the meaning stays similar. For a social caption, choose the mode that readers understand immediately.</p>
+        <p>For a game quest, separate title and instruction. The title can be old-style: "The Shield of the Dark Wood." The instruction can be clearer: "Find the shield in the forest and return to the village." If both are too archaic, players may miss the objective. For a novel, use older language where it supports character and mood, not everywhere. For a poem, choose words for sound as much as meaning. For a motto, remove filler words before translating.</p>
+        <p>This intent-based approach is the reason the page includes shortcut buttons. A user can press a greeting, a thank-you phrase, a village phrase, or a king phrase and immediately see how the translator behaves. That is faster than reading instructions. It also helps mobile users who may not want to type long text on a phone. Tool-first design matches the main keyword because searchers expect action first and explanation second.</p>
+
+        <h2>Mobile Old English translator experience</h2>
+        <p>A large share of users search for quick translators on phones. A mobile Old English translator must be easy to use with one thumb, readable on a narrow screen, and free of horizontal scrolling. That means the input and output areas should stack vertically, buttons should be at least touch-friendly height, and navigation should collapse cleanly. The tool on this page follows that pattern. On desktop, the translator can show input and output side by side. On mobile, the panels stack so each text area has enough width.</p>
+        <p>Mobile users also need direct actions. Copy, paste, clear, swap, translate, and download should not be hidden behind complicated menus. A user may paste text from a message, translate it, copy the result, and send it back in another app. Another user may test a phrase for a game, save it as TXT, and return later. The interface keeps these actions visible and full-width on small screens so they are easier to tap.</p>
+        <p>Dark mode matters on mobile because many users work at night, in classrooms, on stage, during games, or in dim rooms. The theme toggle stores the preference locally, so the site can reopen with the same look. The translator history also stays local, which is useful for mobile drafting. A user can test several versions, close the page, return later, and copy the best one as long as browser storage remains available.</p>
+        <p>Responsive design is not only visual. It affects the success of the keyword. If a user searches "old english translator" on a phone and the tool is hard to use, the page fails the intent even if the article is long. The translator must be the first useful element, the controls must remain clear, and the content must be readable after the tool. That is why the mobile layout is part of the core implementation rather than an afterthought.</p>
+
+        <h2>Best practices for Old English phrase translation</h2>
+        <p>For a phrase, decide whether meaning or appearance matters more. If meaning matters, use a simple source sentence and choose a readable mode. If appearance matters, use Anglo-Saxon mode with special letters, but check the meaning before final use. If the phrase is permanent, public, or important, get expert review. If it is for fun, choose the style that sounds best to you.</p>
+        <p>Keep phrases short. "Truth and courage guide the king" will produce a cleaner result than a long paragraph with several clauses. Avoid idioms such as "break the ice," "hit the road," or "go viral." These phrases do not map cleanly into older English. Rewrite the meaning first: "begin speaking," "leave now," or "many people shared the news." Then translate the clearer version.</p>
+        <p>Use punctuation normally. Old-style spelling does not require confusing punctuation. For a motto, remove unnecessary words. "Wisdom, truth, and courage" is stronger than "We believe that wisdom, truth, and courage are very important." Historical language often feels more powerful when it is concise. The download button can save alternate versions while you compare them.</p>
+        <p>Read the result aloud. Old English style is not only visual. Rhythm matters. Shakespearean and archaic lines often sound better when they have a strong beat. Medieval and Anglo-Saxon lines often feel better when they use concrete nouns. If the result sounds awkward, try another style or revise the source sentence.</p>
+
+        <h2>FAQ about the Old English translator</h2>
+        <h3>Is this a true Old English translator?</h3>
+        <p>It is a practical Old English style translator with an Anglo-Saxon mode. It gives useful historical flavor and common word conversion, but it is not a complete scholarly grammar engine. Use it for everyday translation, creative writing, games, examples, and learning support. For exact academic Old English, consult a specialist resource.</p>
+        <h3>Can I translate Old English back to modern English?</h3>
+        <p>Yes. Use the direction selector and choose Old English to Modern English. The tool can normalize common archaic pronouns, verb endings, and Old English-style words. It is best for short text, familiar forms, and simplified phrases.</p>
+        <h3>What style should I choose?</h3>
+        <p>Choose Anglo-Saxon for the strongest Old English flavor, Medieval for Middle English atmosphere, Shakespearean for dramatic Early Modern English, and Thee Thou for readable old-fashioned wording. If you are not sure, start with Thee Thou or Shakespearean, then compare with Anglo-Saxon.</p>
+        <h3>Is Shakespeare Old English?</h3>
+        <p>No. Shakespeare wrote in Early Modern English. Many people casually call it old English because it sounds older than today's English, but historically it is much later than Old English. The translator includes a Shakespearean mode because many users searching Old English translator actually want that style.</p>
+        <h3>Can I use this for a tattoo or inscription?</h3>
+        <p>You can use the tool for ideas, but permanent text should be reviewed by a qualified expert. Old English grammar is complex, and a style converter may not produce the exact meaning you intend.</p>
+        <h3>Does the site save my translations?</h3>
+        <p>The history feature saves recent translations in your browser's local storage. It does not require an account. You can clear the history from the tool.</p>
+        <h3>Can I download the translation?</h3>
+        <p>Yes. Use the Download TXT button to save the current output as a plain text file. This is useful for writers, students, and game developers who want to keep translation drafts.</p>
+        <h3>Why does the result sometimes look partly modern?</h3>
+        <p>The offline translator keeps unknown words unchanged so the sentence remains readable. This is better than replacing words incorrectly. For stronger old-style output, simplify the source sentence, choose a stronger mode, or edit the result manually.</p>
+        <h3>Does the translator work on mobile?</h3>
+        <p>Yes. The layout stacks the input and output areas on small screens, uses full-width buttons, keeps touch targets large, and avoids horizontal overflow. It is designed for phones, tablets, and desktop browsers.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>Old English Translator - browser-based historical English converter</span>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
